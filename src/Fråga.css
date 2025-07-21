@@ -1,0 +1,45 @@
+.fraga-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.fraga-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fraga-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fraga-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.fraga-container input,
+.fraga-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fraga-container button {
+  padding: 10px;
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fraga-container button:hover {
+  background-color: #155ab6;
+}

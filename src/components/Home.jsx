@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '../assets/kaba.jpeg';
-import './home.css';
+import './Home.css';
 
 
 const Home = () => {

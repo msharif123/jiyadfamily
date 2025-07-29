@@ -6,6 +6,7 @@ import Trips from "./components/Trips";  // fixed typo
 import Fråga from "./components/Fråga";  // optional: renamed variable to avoid special char
 import AboutUs from "./components/AboutUs";
 import Contact from './components/Contact';
+import News from './components/News';
 import Footer from "./components/Footer";
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/fråga" element={<Fråga />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/news" element={<News />} />
         <Route path="*" element={<h2>Page Not Found</h2>} />
       </Routes>
       <Footer />

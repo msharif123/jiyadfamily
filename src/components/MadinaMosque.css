@@ -1,0 +1,86 @@
+/* Logo centered on top */
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Main container with text + mosque image */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.title {
+  color: #1a4d2e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.caption {
+  font-style: italic;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Madina Mosque Image with slide animation */
+@keyframes slideRightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  cursor: pointer;
+  animation: slideRightLeft 3s ease-in-out infinite;
+}
+
+/* Jiyad Image below the main container */
+.jiyad-image-container {
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.jiyad-image {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.jiyad-image:hover {
+  transform: scale(1.05);
+}

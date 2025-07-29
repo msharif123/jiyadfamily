@@ -1,0 +1,86 @@
+/* src/components/News.css */
+
+.news-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 700px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.news-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.news-dates,
+.news-price {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.news-price span {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.news-section {
+  margin-top: 25px;
+}
+
+.news-section h2 {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.news-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.highlight {
+  background-color: #f1f9f2;
+  padding: 15px;
+  border-left: 4px solid #27ae60;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.news-contact {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.news-contact p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.news-button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.news-button:hover {
+  background-color: #1e874b;
+}

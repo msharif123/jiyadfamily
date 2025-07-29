@@ -1,5 +1,7 @@
 import React from 'react';
 import backgroundImage from '../assets/kaba.jpeg';
+import MadinaMosque from './MadinaMosque';
+import News from './News';
 import './Home.css';
 
 
@@ -7,12 +9,21 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Hero Section */}
+      <MadinaMosque/>
       <div
         className="hero-section"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
       >
+
+          <div className="home-container">
+  {/* ... other content */}
+  <News />
+</div>
+
+
+
              
         <div className="hero-content">
           <h1>شركة الحياد للحج والعمرة ترحب بكم</h1>
@@ -27,10 +38,10 @@ const Home = () => {
         <div className="welcome-content">
           {/* Arabic Version */}
           <div className="arabic-welcome">
-            <h2>شركة الحياد للحج والعمرة</h2>
+            <h2>شركة ة</h2>
             
             <p className="arabic-text">
-              بكل فخر واعتزاز، نُرحب بكم في رحاب الحياد للحج والعمرة، حيث نضع راحتكم ورضاكم في مقدمة أولوياتنا.
+              بكل فخر واعتزاز، نُرحب بكم في رحاب الجياد  للحج والعمرة، حيث نضع راحتكم ورضاكم في مقدمة أولوياتنا.
             </p>
             <p className="arabic-text">
               نُقدّم لكم خدمات متميزة، وبرامج متكاملة، وتنظيم راقٍ يليق بقدسية الرحلة وروحانيتها.

@@ -1,0 +1,91 @@
+
+
+/* Logo Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navigation Styles */
+.navigation ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+}
+
+.navigation a:hover {
+  color: #0066cc;
+}
+
+/* User Actions Styles */
+.user-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+}
+
+.signup-btn {
+  background: #0066cc;
+  border: 1px solid #0066cc;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #f0f7ff;
+}
+
+.signup-btn:hover {
+  background: #0052a3;
+  border-color: #0052a3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navigation ul {
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .user-actions {
+    margin-top: 1rem;
+  }
+} 

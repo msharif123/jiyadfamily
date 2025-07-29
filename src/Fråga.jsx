@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Fråga.css';
-
+// import { useNavigate } from "react-router-dom";
 const Fråga = () => {
   const [formData, setFormData] = useState({
     namn: '',

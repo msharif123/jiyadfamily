@@ -1,8 +1,10 @@
+import AboutUs from "./components/AboutUs"
 import Contact from "./assets/Contact"
 import Home from "./components/Home"
 import Trips from "./components/Tripts"
 import Fråga from "./Fråga"
-import Navbar from "./Navbar"
+import Header from "./components/Header"
+import Footer from "./Footer"
 
 
  
@@ -10,12 +12,14 @@ const  App=() =>{
   
 
   return (<>
-   <Navbar/>
-    <h1>jiyad -app</h1>
-    <Home/>
-    <Trips/>
-    <Fråga/>
-    <Contact/>
+   <Header/>
+  <Home/>
+  <Trips/>
+  <Fråga/>
+     <Contact/>
+    <AboutUs/>
+    <Footer/>
+  
    
   
     

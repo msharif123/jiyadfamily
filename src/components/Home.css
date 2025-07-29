@@ -1,137 +1,142 @@
-Hero Section Styles
+/* home.css */
+
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+/* Hero Section */
 .hero-section {
+  position: relative;
+  height: 450px;
   background-size: cover;
   background-position: center;
-  height: 500px;
-  color: white;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
   text-align: center;
-  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1.5px 1.5px 5px rgba(0,0,0,0.7);
 }
 
-.hero-content {
-  position: flex;
-  z-index: 1;
-  max-width: 800px;
-  padding: 20px;
-  text-align: center;
+.hero-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-.hero-section h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.hero-section p {
-  font-size: 1.8rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Welcome Section Styles */
+/* Welcome Section */
 .welcome-section {
-  padding: 60px 20px;
-  background-color: #f5f5f5;
-}
-
-.welcome-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.arabic-welcome, .english-welcome {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Arabic and English container */
+.arabic-welcome,
+.english-welcome {
+  flex: 1 1 400px;
+  background: #f9f9f9;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
 }
 
+/* Arabic text style */
 .arabic-welcome {
   direction: rtl;
+  font-family: 'Amiri', serif; /* A classic Arabic font */
+  color: #2c3e50;
 }
 
-.arabic-welcome h2, .english-welcome h2 {
-  color: #1a5276;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+.arabic-welcome h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 6px;
+  max-width: max-content;
 }
 
 .arabic-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 15px;
-  text-align: center
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  line-height: 1.7;
+  color: #34495e;
 }
 
-.arabic-highlight {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #1a5276;
-  text-align: center;
-  margin-top: 20px;
-  line-height: 2;
+/* English text style */
+.english-welcome {
+  direction: ltr;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e;
+}
+
+.english-welcome h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 6px;
+  max-width: max-content;
 }
 
 .english-welcome p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 15px;
-  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  line-height: 1.7;
 }
 
-.highlight {
-  font-weight: bold;
-  color: #1a5276;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-section {
-    height: 400px;
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .welcome-section {
+    flex-direction: column;
+    gap: 30px;
   }
   
-  .hero-section h1 {
+  .hero-section {
+    height: 350px;
+  }
+  
+  .hero-content h1 {
     font-size: 2.2rem;
   }
   
-  .hero-section p {
-    font-size: 1.4rem;
-  }
-  
-  .welcome-content {
-    gap: 20px;
-  }
-  
-  .arabic-welcome h2, .english-welcome h2 {
-    font-size: 1.6rem;
-  }
-  
-  .arabic-text {
+  .hero-content p {
     font-size: 1.1rem;
   }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 280px;
+    padding: 0 10px;
+  }
   
-  .english-welcome p {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content p {
     font-size: 1rem;
+  }
+  
+  .arabic-welcome,
+  .english-welcome {
+    padding: 20px;
   }
 }

@@ -11,7 +11,7 @@ const AboutUs = () => {
 
       <div className="intro-section">
         <p>
-          We are devoted to crafting spiritually uplifting Umrah experiences that stay with you forever. 
+          We are devoted to crafting spiritually uplifting Umrah experiences that stay with you forever.
           Our comprehensive services ensure every aspect of your pilgrimage is handled with care and reverence.
         </p>
       </div>
@@ -47,13 +47,9 @@ const AboutUs = () => {
 
       <div className="quote-section">
         <blockquote>
-          "We remove the hurdles so you can embrace every sacred moment."
+          With over 15 years of dedicated experience, we have proudly served thousands of satisfied clients.
+          Our commitment to excellence ensures every journey is seamless and memorable.
         </blockquote>
-      </div>
-
-      <div className="cta-section">
-        <p>Let us serve you on this blessed journey.</p>
-        <button className="cta-button">📞 Reach out today</button>
       </div>
     </div>
   );

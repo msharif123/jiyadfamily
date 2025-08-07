@@ -1,13 +1,14 @@
-# netlify.toml
-
 [build]
-  publish = "build"  # This is the folder where your React build files will be stored
-  command = "npm run build"  # Build command to run before deploying
+  publish = "build"
+  command = "npm run build"
 
 [[redirects]]
   from = "/contact"
-  to = "/.netlify/functions/contact"  # Redirect to the serverless function for handling contact form
+  to = "/.netlify/functions/contact"
   status = 200
 
 [functions]
-  directory = "netlify/functions"  # Specifies where Netlify will look for your serverless functions
+  directory = "netlify/functions"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"

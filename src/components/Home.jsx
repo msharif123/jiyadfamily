@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '../assets/kaba.jpeg';
-import MadinaMosque from './MadinaMosque';
+
 import News from './News';
 import './Home.css';
 
@@ -19,8 +19,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Madina Mosque Component */}
-      
+   
 
       {/* Welcome Message Section */}
       <div className="welcome-section">

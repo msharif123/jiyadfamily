@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AboutUs.css';
-import Comment from './comment';
+
 import { useNavigate } from 'react-router-dom';
 
 

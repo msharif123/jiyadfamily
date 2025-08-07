@@ -1,6 +1,6 @@
 [build]
-  publish = "build"
-  command = "npm install && run build"
+  command = "npm install && npm run build"
+  publish = "my-vite-app/dist"
 
 [[redirects]]
   from = "/contact"

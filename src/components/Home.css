@@ -1,142 +1,162 @@
-/* home.css */
-
 .home-container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #222;
-  line-height: 1.6;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px 40px;
+  background-color: #fdfdfd;
 }
 
 /* Hero Section */
 .hero-section {
-  position: relative;
-  height: 450px;
+  height: 50vh;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
   color: #fff;
   text-align: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
 .hero-content h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-shadow: 1.5px 1.5px 5px rgba(0,0,0,0.7);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
-  font-size: 1.3rem;
-  font-weight: 500;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffc107;
+  color: #000;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a800;
 }
 
 /* Welcome Section */
 .welcome-section {
-  margin-top: 50px;
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f7f9fb;
 }
 
-/* Arabic and English container */
-.arabic-welcome,
-.english-welcome {
-  flex: 1 1 400px;
-  background: #f9f9f9;
-  padding: 25px 30px;
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.decorative-line {
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.welcome-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.welcome-box {
+  background-color: #fff;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-/* Arabic text style */
-.arabic-welcome {
-  direction: rtl;
-  font-family: 'Amiri', serif; /* A classic Arabic font */
-  color: #2c3e50;
+.welcome-box:hover {
+  transform: translateY(-5px);
 }
 
-.arabic-welcome h2 {
-  font-size: 1.9rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  border-bottom: 3px solid #f39c12;
-  padding-bottom: 6px;
-  max-width: max-content;
+.benefits-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
 }
 
-.arabic-text {
-  font-size: 1.15rem;
-  margin-bottom: 14px;
-  line-height: 1.7;
-  color: #34495e;
+/* News Section */
+.news-section {
+  padding: 60px 20px;
+  background-color: #fff;
 }
 
-/* English text style */
-.english-welcome {
-  direction: ltr;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #34495e;
+/* CTA Section */
+.cta-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
 }
 
-.english-welcome h2 {
-  font-size: 1.9rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  border-bottom: 3px solid #f39c12;
-  padding-bottom: 6px;
-  max-width: max-content;
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.english-welcome p {
-  font-size: 1.15rem;
-  margin-bottom: 14px;
-  line-height: 1.7;
+.primary-cta,
+.secondary-cta {
+  padding: 12px 26px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .welcome-section {
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .hero-section {
-    height: 350px;
-  }
-  
+.primary-cta {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.secondary-cta {
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #fff;
+}
+
+.primary-cta:hover {
+  background-color: #e0a800;
+}
+
+.secondary-cta:hover {
+  background-color: #e6f0ff;
+  color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-  
-  .hero-content p {
-    font-size: 1.1rem;
-  }
-}
 
-@media (max-width: 480px) {
-  .hero-section {
-    height: 280px;
-    padding: 0 10px;
-  }
-  
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-  
   .hero-content p {
     font-size: 1rem;
   }
-  
-  .arabic-welcome,
-  .english-welcome {
-    padding: 20px;
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
 }

@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+
 
 import Navbar from './components/Navbar';
 import Home from "./components/Home";
-import Trips from "./components/Trips";  // fixed typo
-import Fråga from "./components/Fråga";  // optional: renamed variable to avoid special char
+import Service from "./components/Service";  
 import AboutUs from "./components/AboutUs";
-import Contact from './components/Contact';
 import News from './components/News';
 import Footer from "./components/Footer";
-
+import Trips from './components/Trips';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -17,10 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/trips" element={<Trips />} />
-        <Route path="/fråga" element={<Fråga />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+         <Route path="/services" element={<Service />} />
         <Route path="*" element={<h2>Page Not Found</h2>} />
       </Routes>
       <Footer />

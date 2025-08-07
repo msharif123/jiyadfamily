@@ -1,24 +1,75 @@
-import React, { useState } from 'react';
-import './AboutUs.css'; // Or move CTA styles to Contact.css if preferred
+import React, { useState } from "react";
+import "./Contact.css";
 
 const Contact = () => {
-  const [showPhone, setShowPhone] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const handleClick = () => setShowPhone(true);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // For now, just log the input
+    console.log("Form submitted:", formData);
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
 
   return (
-    <div className="cta-section">
-      <p>Let us serve you on this blessed journey.</p>
+    <div className="contact-container">
+      <h2>Contact Us</h2>
 
-      {!showPhone ? (
-        <button className="cta-button" onClick={handleClick}>
-          📞 Reach out today
-        </button>
-      ) : (
-        <p className="phone-number">
-          📱 Call us: <a href="tel:+254722727236">+254 722 727236</a>
-        </p>
-      )}
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </label>
+
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </label>
+
+        <label>
+          Message:
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   );
 };

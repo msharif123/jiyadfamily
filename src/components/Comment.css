@@ -1,0 +1,110 @@
+/* General styles for the comments section */
+.section.comments {
+  width: 100%;
+  max-width: 800px; /* Limit the width for a better layout */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+/* Heading style */
+.section.comments h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Form container */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Style for input fields */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styles */
+button.primary-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Comment list styles */
+.comments-list {
+  margin-top: 2rem;
+}
+
+.comment {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.comment h4 small {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+}
+
+.comment p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .section.comments {
+    padding: 1.5rem;
+  }
+
+  button.primary-btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .comment h4 {
+    font-size: 1rem;
+  }
+}

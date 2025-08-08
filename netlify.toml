@@ -2,13 +2,10 @@
   command = "npm install && npm run build"
   publish = "my-vite-app/dist"
 
+[functions]
+  directory = "netlify/functions"
+
 [[redirects]]
   from = "/contact"
   to = "/.netlify/functions/contact"
   status = 200
-
-[functions]
-  directory = "netlify/functions"
-
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"

@@ -1,6 +1,7 @@
 [build]
-  command = "npm install && npm run build"
+  command = "cd jiyad-family && npm install && npm run build"
   publish = "jiyad-family/dist"
+
 
 [functions]
   directory = "netlify/functions"

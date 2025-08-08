@@ -1,6 +1,6 @@
 [build]
   command = "cd JIYADFAMILY && npm install && npm run build"
-  publish = "jiyad-family/dist"
+  publish = "JIYADFAMILY/dist"
 
 
 [functions]

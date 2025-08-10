@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AboutUs.css';
+import './About.css';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -76,7 +76,7 @@ const AboutUs = () => {
       <div className="about-header">
         <div className="overlay" />
         <div className="header-content">
-          <h1>Aljiyad for Umrah & Hajj</h1>
+          <h1>Jiyad Family for Umrah & Hajj</h1>
           <p>Guiding Kenyan Muslims on Sacred Journeys Since 2010</p>
           <div className="button-group">
             <button className="primary-btn" onClick={goToContact}>Contact</button>
@@ -137,7 +137,7 @@ const AboutUs = () => {
         </div>
       </section>
        {/* Comment Section */}
-        <Comment onCommentSubmit={handleCommentSubmit} comments={comments} />
+     
 
       {/* Call to Action */}
       <section className="cta">

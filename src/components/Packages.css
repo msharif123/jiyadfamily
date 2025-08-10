@@ -1,0 +1,61 @@
+/* Packages.css */
+
+.packages-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.packages-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+.packages-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.packages-container ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.packages-container li {
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #333;
+}
+
+@media (min-width: 600px) {
+  .packages-container ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .packages-container ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}

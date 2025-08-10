@@ -7,7 +7,14 @@ const services = [
     id: 1,
     title: 'Tailored Umrah Packages',
     description: 'Customized packages for individuals and families to ensure a comfortable and memorable pilgrimage experience.',
-    icon: '🌙',
+    icon: (
+      <img
+        src="https://twemoji.maxcdn.com/v/latest/72x72/1f54b.png"
+        alt="Kaaba"
+        width="32"
+        height="32"
+      />
+    ),
     link: '/packages',
   },
   {
@@ -21,7 +28,14 @@ const services = [
     id: 3,
     title: 'Private Transport Services',
     description: 'Enjoy comfortable, private transportation to and from the holy sites with our dedicated transport options.',
-    icon: '🚗',
+    icon:(
+      <img
+        src="https://twemoji.maxcdn.com/v/latest/72x72/1f68c.png"
+        alt="Buss"
+        width="32"
+        height="32"
+      />
+    ),
     link: '/private-transport',
   },
   {

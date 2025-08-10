@@ -10,7 +10,9 @@ import News from './components/News';
 import Footer from "./components/Footer";
 import Trips from './components/Trips';
 import Contact from './components/Contact'; 
+import Transport from './components/Transport';
 import About from "./components/About"; // ✅ Capitalization is good
+
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Service />} />
-            <Route path="/packages" element={<UmrahPackages />} />
+            <Route path="/packages" element={<UmrahPackages />} />      
+<Route path="/private-transport" element={<Transport />} />
         
             new route */
         <Route path="*" element={<h2>Page Not Found</h2>} />

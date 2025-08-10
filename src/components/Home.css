@@ -15,21 +15,24 @@
   padding: 0 20px;
   color: #fff;
   text-align: center;
+  background-color: #2e7d32; /* fallback green if no image */
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #e0f7e9;
 }
 
 .cta-button {
-  background-color: #ffc107;
-  color: #000;
+  background-color: #007bff; /* blue */
+  color: white;
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: bold;
@@ -40,13 +43,13 @@
 }
 
 .cta-button:hover {
-  background-color: #e0a800;
+  background-color: #0056b3; /* darker blue */
 }
 
 /* Welcome Section */
 .welcome-section {
   padding: 60px 20px;
-  background-color: #f7f9fb;
+  background-color: #f1fdf6; /* very light green */
 }
 
 .section-header {
@@ -57,13 +60,13 @@
 .section-header h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #2e7d32; /* green */
 }
 
 .decorative-line {
   width: 80px;
   height: 4px;
-  background-color: #007bff;
+  background-color: #007bff; /* blue accent */
   margin: 0 auto;
   border-radius: 4px;
 }
@@ -75,11 +78,12 @@
 }
 
 .welcome-box {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  border-left: 4px solid #2e7d32;
 }
 
 .welcome-box:hover {
@@ -95,15 +99,15 @@
 /* News Section */
 .news-section {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 /* CTA Section */
 .cta-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #2e7d32; /* green background */
+  color: #ffffff;
 }
 
 .cta-buttons {
@@ -126,23 +130,23 @@
 }
 
 .primary-cta {
-  background-color: #ffc107;
-  color: #000;
+  background-color: #007bff; /* blue */
+  color: #fff;
 }
 
 .secondary-cta {
-  background-color: #fff;
-  color: #007bff;
-  border: 2px solid #fff;
+  background-color: #ffffff;
+  color: #2e7d32; /* green text */
+  border: 2px solid #ffffff;
 }
 
 .primary-cta:hover {
-  background-color: #e0a800;
+  background-color: #0056b3;
 }
 
 .secondary-cta:hover {
-  background-color: #e6f0ff;
-  color: #0056b3;
+  background-color: #e0f7e9;
+  color: #1b5e20;
 }
 
 /* Responsive */
@@ -159,4 +163,40 @@
     flex-direction: column;
     gap: 15px;
   }
+}
+.welcome-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  flex-direction: row-reverse; /* Important: Arabic now on left */
+}
+
+.arabic-welcome,
+.english-welcome {
+  flex: 1;
+  min-width: 300px;
+  max-width: 48%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.arabic-welcome {
+  text-align: right;
+  direction: rtl;
+  border-right: 5px solid #2e7d32;
+}
+
+.english-welcome {
+  text-align: left;
+  direction: ltr;
+  border-left: 5px solid #007bff;
+}
+
+.arabic-welcome:hover,
+.english-welcome:hover {
+  transform: translateY(-5px);
 }

@@ -1,0 +1,103 @@
+.transport-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #f0fdf4; /* very light green background */
+}
+
+.transport-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: #e3f2fd; /* light blue background */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.transport-hero h1 {
+  font-size: 2.5rem;
+  color: #2e7d32; /* rich green */
+  margin-bottom: 0.5rem;
+}
+
+.transport-hero p {
+  font-size: 1.2rem;
+  color: #1565c0; /* deep blue */
+}
+
+.transport-details {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.transport-card {
+  padding: 1.5rem;
+  border-left: 5px solid #388e3c; /* green border */
+  background-color: #e8f5e9; /* soft green card */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 100, 150, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.transport-card:hover {
+  transform: scale(1.01);
+}
+
+.transport-card h2 {
+  color: #1b5e20; /* darker green */
+  margin-bottom: 0.5rem;
+}
+
+.transport-card p,
+.transport-card ul {
+  color: #1565c0; /* blue text for content */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.transport-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.transport-card.highlight {
+  background-color: #d7f5ff; /* light blue */
+  border-color: #0288d1; /* blue border */
+}
+
+.transport-cta {
+  text-align: center;
+  margin-top: 3rem;
+  background: linear-gradient(135deg, #e0f2f1, #e3f2fd); /* green-blue gradient */
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px dashed #81c784; /* light green border */
+}
+
+.transport-cta h2 {
+  color: #2e7d32;
+  font-size: 2rem;
+}
+
+.transport-cta p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #1565c0;
+}
+
+.primary-btn {
+  background-color: #388e3c; /* green button */
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #1976d2; /* hover: switch to blue */
+}
